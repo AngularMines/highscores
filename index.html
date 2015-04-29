@@ -21,10 +21,11 @@
 
   <div class='hiscore' ng-controller='HiScoreCtrl'>
     <h1 class='board-title'>Hi-Scores, biatch.</h1>
-    <div class='player' ng-repeat="score in scores | orderBy:'-score'">
+    <div class='player' ng-repeat="score in scores | orderBy:'time'">
       <p>{{$index+1}}</p>
       <p>{{score.name}}</p>
-      <p>{{score.score}}</p>
+      <p>{{score.time}}</p>
+      <p>{{score.createdAt | date:"MM/dd/yyyy 'at' h:mma"}}</p>
     </div>
 <!--     <div>
       <ul>
