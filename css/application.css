@@ -1,3 +1,27 @@
 html {
   min-height: 100%;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.hiscore {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  min-width: 50%;
+  background-color: grey;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-style: dotted;
+}
+
+p {
+  margin-right: 10%;
+}

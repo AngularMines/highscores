@@ -8,6 +8,6 @@ angular.module('hiScoreApp', [])
       });
     }
 
-    $scope.scores = [{rank:1, name: "Piet", score: 100}]
+    $scope.scores = [{name: "Harriet", score: 200},{name: "Piet", score: 100}]
     // loadHiScores();
   }])
