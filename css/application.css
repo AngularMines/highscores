@@ -10,16 +10,22 @@ body {
 .hiscore {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 50%;
   min-width: 50%;
-  background-color: grey;
+  background-color: #8ec4d0;
+  border: 1px solid;
+}
+
+.board-title {
+  text-align: center;
 }
 
 .player {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-style: dotted;
+  border: 1px solid;
 }
 
 p {

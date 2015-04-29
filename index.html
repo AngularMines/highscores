@@ -20,6 +20,7 @@
 <body >
 
   <div class='hiscore' ng-controller='HiScoreCtrl'>
+    <h1 class='board-title'>Hi-Scores, biatch.</h1>
     <div class='player' ng-repeat="score in scores | orderBy:'-score'">
       <p>{{$index+1}}</p>
       <p>{{score.name}}</p>
