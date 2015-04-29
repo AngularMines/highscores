@@ -21,7 +21,7 @@ body {
   text-align: center;
 }
 
-.player {
+.player, .selectors {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -29,5 +29,6 @@ body {
 }
 
 p {
-  margin-right: 10%;
+  min-width: 33%;
+  text-align: center;
 }

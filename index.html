@@ -21,11 +21,11 @@
 
   <div class='hiscore' ng-controller='HiScoreCtrl'>
     <h1 class='board-title'>Hi-Scores, biatch.</h1>
-    <div>
-      <a href="" ng-click="predicate= 'createdAt'; reverse=!reverse">Date</a>
-      <a href="" ng-click="predicate= 'time'; reverse=!reverse">Time</a>
+    <div class='selectors'>
       <a href="" ng-click="predicate= 'name'; reverse=!reverse">Name</a>
-    <div>
+      <a href="" ng-click="predicate= 'time'; reverse=!reverse">Time</a>
+      <a href="" ng-click="predicate= 'createdAt'; reverse=!reverse">Date</a>
+    </div>
     <div class='player' ng-repeat="score in scores | orderBy:predicate:reverse">
       <p>{{score.name}}</p>
       <p>{{score.time}}</p>
