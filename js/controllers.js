@@ -13,7 +13,7 @@ var app = angular.module('hiScoreApp', []);
     var config =
     {
       method: 'GET',
-      url: 'http://192.168.1.2:9393/scores',
+      url: 'https://still-sea-1226.herokuapp.com/scores',
       dataType: 'jsonp',
       headers:
       {

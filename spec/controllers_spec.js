@@ -30,7 +30,7 @@ describe('something', function() {
 
 
   it('should set a default value of the predicate model', function() {
-    expect($scope.predicate).toBe('-time')
+    expect($scope.predicate).toBe('time')
   });
 })
 
