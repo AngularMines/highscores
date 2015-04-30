@@ -1,0 +1,26 @@
+{
+  "name": "highscores",
+  "version": "0.0.0",
+  "description": "highscores",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks-node": "^1.3.2",
+    "angular-node": "^1.3.2",
+    "jasmine": "^2.3.0",
+    "jasmine-node": "^1.14.5"
+  },
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AngularMines/highscores"
+  },
+  "author": "Joshua Vial <joshua@enspiral.com> (http://joshuavial.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngularMines/highscores/issues"
+  },
+  "homepage": "https://github.com/AngularMines/highscores"
+}
