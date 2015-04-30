@@ -21,7 +21,7 @@ describe('something', function() {
   }))
 
   it('initializes scores', function() {
-    expect($scope.scores.length).toBe(0)
+    expect($scope.scores.length).toBe(2)
   });
 })
 
