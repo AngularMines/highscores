@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  min-height: 100%;
+  background-color: black;
   display: flex;
   justify-content: center;
 }
@@ -13,22 +15,38 @@ body {
   justify-content: center;
   max-width: 50%;
   min-width: 50%;
-  background-color: #8ec4d0;
-  border: 1px solid;
+  border: 1px solid #05C5FF;
+  background-color: black;
 }
 
 .board-title {
   text-align: center;
 }
 
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.search-input {
+  border: 3px solid #05C5FF;
+  max-height: 20px;
+  min-width: 200px;
+  background-color: black;
+  color: #05C5FF;
+}
+
 .player, .selectors {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid;
+  border: 1px solid #05C5FF;
 }
 
-p {
+p, a {
+  color: #05C5FF;
   min-width: 33%;
   text-align: center;
 }
