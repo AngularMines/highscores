@@ -13,7 +13,11 @@ describe('something', function() {
     $scope = {}
     $http = {
       get: function() {
-        return { success: jasmine.createSpy() }
+        return {
+          success: function(callback) {
+            callback([{name: "Harriet", time: 50, createdAt: new Date().getTime()-1000000},{name: "Piet", time: 100, createdAt: new Date().getTime()}])
+          }
+        }
       }
     }
 
@@ -22,6 +26,11 @@ describe('something', function() {
 
   it('initializes scores', function() {
     expect($scope.scores.length).toBe(2)
+  });
+
+
+  it('should set a default value of the predicate model', function() {
+    expect($scope.predicate).toBe('-time')
   });
 })
 
