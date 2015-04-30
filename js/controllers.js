@@ -7,5 +7,7 @@ angular.module('hiScoreApp', [])
         $scope.scores = data;
       });
     }
-    loadHiScores();
+
+    $scope.scores = [{name: "Harriet", score: 200},{name: "Piet", score: 100}]
+    // loadHiScores();
   }])
