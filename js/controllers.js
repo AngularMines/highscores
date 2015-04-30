@@ -9,6 +9,6 @@ angular.module('hiScoreApp', [])
     }
 
     $scope.scores = [{name: "Harriet", time: 50, createdAt: new Date().getTime()-1000000},{name: "Piet", time: 100, createdAt: new Date().getTime()}]
-    $scope.predicate = '-time';
+    $scope.predicate = 'time';
     // loadHiScores();
   }])

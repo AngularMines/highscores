@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .hiscore {
   display: flex;
   flex-direction: column;
@@ -37,6 +41,11 @@ body {
   min-width: 200px;
   background-color: black;
   color: #05C5FF;
+}
+
+.selectors {
+  padding: 2%;
+  font-size: 150%;
 }
 
 .player, .selectors {
