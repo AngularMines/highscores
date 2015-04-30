@@ -1,14 +1,38 @@
-angular.module('hiScoreApp', [])
-  .controller('HiScoreCtrl', ['$scope', '$http', function($scope, $http){
+var app = angular.module('hiScoreApp', []);
+
+  app.config(function($httpProvider) {
+      //Enable cross domain calls
+      $httpProvider.defaults.useXDomain = true;
+      //Remove the header used to identify ajax call  that would prevent CORS from working
+      delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  });
+
+  app.controller('HiScoreCtrl', ['$scope', '$http', function($scope, $http){
     $scope.scores = [];
 
-    function loadHiScores(){
-      $http.get('/scores').success(function(data){
+    var config =
+    {
+      method: 'GET',
+      url: 'http://192.168.1.2:9393/scores',
+      dataType: 'jsonp',
+      headers:
+      {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    }
+
+    function loadHiScores()
+    {
+      $http(config).
+      success(function(data){
+        console.log(data);
         $scope.scores = data;
       });
     }
 
-    $scope.scores = [{name: "Harriet", time: 50, createdAt: new Date().getTime()-1000000},{name: "Piet", time: 100, createdAt: new Date().getTime()}]
+    // dummy data
+    // $scope.scores = [{name: "Harriet", time: 50, createdAt: new Date().getTime()-1000000},{name: "Piet", time: 100, createdAt: new Date().getTime()}]
     $scope.predicate = 'time';
-    // loadHiScores();
+    loadHiScores();
   }])

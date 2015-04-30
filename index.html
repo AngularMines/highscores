@@ -33,7 +33,7 @@
     <div class='player' ng-repeat="score in scores | orderBy:predicate:reverse | filter:query">
       <p>{{score.name}}</p>
       <p>{{score.time}}</p>
-      <p>{{score.createdAt | date:"MM/dd/yyyy 'at' h:mma"}}</p>
+      <p>{{score.created_at | date:"MM/dd/yyyy 'at' h:mma"}}</p>
     </div>
   </div>
 
